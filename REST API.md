@@ -75,5 +75,5 @@ ex)    GET : /users/{userid}/devices (일반적으로 소유 ‘has’의 관계
 > 4xx : 클라이언트의 잘못된 요청  
 > 5xx : 서버쪽 오류로 인한 상태코드  
 - - -
-<span style="color:whitesmoke">출처 : <https://gmlwjd9405.github.io/2018/09/21/rest-and-restful.html> </span> 
+**출처** : <https://gmlwjd9405.github.io/2018/09/21/rest-and-restful.html>
            [Network] REST란? REST API란? RESTful이란?
