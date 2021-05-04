@@ -9,12 +9,12 @@ ex) GET studentNumber/1
 ```
 ex) GET(**Method**) /student/Numbers/2 (**Resource**)
 ```
-*CRUD Operation : 
-* Create : 생성(POST)
-* Read : 조회(GET)
-* Update : 수정(PUT)
-* Delete : 삭제(DELETE)
-* HEAD: header 정보 조회(HEAD)
+* CRUD Operation : 
+  * Create : 생성(POST)
+  * Read : 조회(GET)
+  * Update : 수정(PUT)
+  * Delete : 삭제(DELETE)
+  * HEAD: header 정보 조회(HEAD)
 
 ## REST API의 사용 이유?
 * 1. 클라이언트 서버 간의 분리 가능 (클라이언트와 서버간의 의존성↓)
