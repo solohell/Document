@@ -1,12 +1,14 @@
 ## REST API란? 
 * 의미 : 클라이언트와 서버사이드 간의 REST 한 데이터 전송 
   * Resource의 표현에의 한 상태 전달 
-  * ex) GET studentNumber/1
-
+```
+ex) GET studentNumber/1
+```
 * REST API 의 개념
   * HTTP URI 를 통해 Resource 명시 -> Http Method (GET,POST,DELETE,PUT) 등을 통해 CRUD Operation를 적용   
-  * ex) GET(**Method**) /student/Numbers/2 (**Resource**)
-
+```
+ex) GET(**Method**) /student/Numbers/2 (**Resource**)
+```
 *CRUD Operation : 
 * Create : 생성(POST)
 * Read : 조회(GET)
@@ -40,8 +42,8 @@ GET /Member/1 -> GET /members/1
 * URI 설계시 주의 점 
 1) 슬래시 구분자(/)는 계층 관계를 나타내는 데 사용
 ```
-    http://restapi.example.com/houses/apartments
-    http://restapi.example.com/animals/mammals/whales
+http://restapi.example.com/houses/apartments
+http://restapi.example.com/animals/mammals/whales
 ```
 2) URI 마지막 문자로 슬래시(/ )를 포함하지 않는다.
 ```
@@ -54,13 +56,13 @@ http://restapi.example.com/houses/apartments/ (X)
 6) 파일 확장자는 URI에 포함하지 않는다.
   * REST API에서는 메시지 바디 내용의 포맷을 나타내기 위한 파일 확장자를 URI 안에 포함시키지 않는다.
 ```
-Ex) http://restapi.example.com/members/soccer/345/photo.jpg (X)
-Ex) GET / members/soccer/345/photo HTTP/1.1 Host: restapi.example.com Accept: image/jpg (O)
+ex) http://restapi.example.com/members/soccer/345/photo.jpg (X)
+ex) GET / members/soccer/345/photo HTTP/1.1 Host: restapi.example.com Accept: image/jpg (O)
 ```
 7) 리소스 간의 관계를 표현하는 방법
 ```
-    /리소스명/리소스 ID/관계가 있는 다른 리소스명
-    ex)    GET : /users/{userid}/devices (일반적으로 소유 ‘has’의 관계를 표현할 때)
+/리소스명/리소스 ID/관계가 있는 다른 리소스명
+ex)    GET : /users/{userid}/devices (일반적으로 소유 ‘has’의 관계를 표현할 때)
 ```    
 
 * REST API의 설계 예시
