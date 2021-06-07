@@ -181,7 +181,6 @@ console.log(closure()); // 12
 **자신이 실행될 때 사용할 변수만을 기억하며 유지시키는 함수**
 
 위에서는 return하는 것으로 outer함수의 LexcialEnvironment를 외부로 전달했는데, 꼭 return만으로 클로저가 발생하지 않는다.
- 
 브라우저의 전역 객체인 window의 메서드인 `set Interval`이나, `addEventListener`와 같은 함수의 콜백함수로 내부함수를 전달하는 것으로 클로저를 발생시킬 수 있다.
 
 ### currying 함수
